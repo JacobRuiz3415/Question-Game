@@ -8,10 +8,11 @@ if (jQuery){
         answers.each(function(i){
             answerString = answerString + answers[i].value;
         });
-        $(":checked").each(function(i){
-            var answerString = answerString + answers[i].value;
-        });
-        checkIfCorrect(answerString);
+
+        //$(":checked").each(function(i){
+        //    var answerString = answerString + answers[i].value;
+        //});
+        //checkIfCorrect(answerString);
     }
 
     var checkIfCorrect = function(theString){
@@ -23,4 +24,6 @@ if (jQuery){
     }
 
     $("#question1").show();
+    $("#question2").show();
+    $("#question3").show();
 }
